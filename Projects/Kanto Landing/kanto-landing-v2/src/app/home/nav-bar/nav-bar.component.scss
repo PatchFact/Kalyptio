@@ -1,0 +1,209 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+
+ * {
+   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+ }
+// Styling for the navbar
+
+.mainNav {
+  position: relative;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.3));
+  box-shadow: none;
+  height: 64px;
+  .nav-menu-top {
+    top: 0;
+    position: relative;
+    // padding-right: 16px !important;
+  }
+  .logo {
+    img {
+      height: auto;
+      width: 150px !important;
+    }
+  }
+  .navbar-toggler {
+    font-size: 1.6em;
+    color: $primary;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+  }
+  .navbar-nav {
+     margin: 0 0 11px 0;
+    .nav-item {
+      align-self: center;
+      .nav-link {
+        font-weight: 500;
+        color: $gray-900;
+      }
+    }
+  }
+  select.form-control {
+    color: white;
+  }
+  &.gray-background {
+    background: white;//$gray-900 none;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    .nav-link {
+      &.active {
+        //text-shadow: 0px 0px 4px $gray-900 !important;
+        &:after {
+          // display: initial !important;
+        }
+      }
+    }
+  }
+}
+
+.navbar-expanded {
+  height: 330px !important;
+  overflow: hidden;
+  @supports (-webkit-overflow-scrolling: touch) {
+    top: 0px;
+  }
+}
+
+#navbarResponsive {
+  height: 64px;
+  & > ul.navbar-nav {
+    height: 100%;
+  }
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  color: $gray-900;
+}
+
+  #navbarResponsive {
+    height: 64px;
+    & > ul.navbar-nav {
+      height: 100%;
+    }
+  }
+  .mainNav {
+    position: relative;
+    height: 64px;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-around;
+    .logo {
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+    .navbar-nav {
+      
+      .nav-item {
+        .nav-link {
+          height: 100%;
+          // padding: 1.1em 1em !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-self: center;
+          }
+        }
+      }
+      .language {
+        border-left: 2px $gray-900 solid;
+        border-radius: 1px;
+        margin: 30px 10px;
+      }
+      .language-container {
+       width: 28px;
+       margin-top: 18px;
+      }
+    }
+    .navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $gray-900;
+    }
+
+
+
+.logo-image{
+  position: absolute;
+  left: 5vw;
+  z-index: 1;
+  width: 150px;
+  top: 30px;
+}
+
+.background-image{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  left: -20px;
+  top: -10px;
+  @media screen and (min-width: 993px){
+    position: relative;
+    left: -17px; 
+    top: 40px;
+    width: 75%;
+  }
+  // @supports (-webkit-overflow-scrolling: touch) {
+  //   .background-image{
+  //     top: 0px;
+  //   }
+  //}
+}
+
+.language-menu{
+  height: 44px;
+  align-self: flex-end;
+}
+
+.cool-link {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 0px;
+  @media screen and (min-width: 993px){
+    margin-right: 40px;
+  }
+}
+
+.cool-link::after {
+  content: '';
+  margin-left: 50%;
+  display: block;
+  width: 0;
+  height: 3px;
+  background: $primary;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 50%;
+  //transition: width .3s;
+}
+
+.cool-link-language::after {
+  content: '';
+  position: relative;
+  left: -30px;
+  margin-top: 90%;
+  display: block;
+  width: 3px;
+  height: 0px;
+  background: $primary;
+  transition: height .3s;
+}
+
+.cool-link-language:hover::after {
+  height: 58%;
+  //transition: width .3s;
+}

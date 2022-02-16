@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg fixed-top mainNav"
+     [class.gray-background]="navBarExpanded || (beyondOffset$ | async)"
+     [class.navbar-expanded]="navBarExpanded">
+  <div class="container nav-menu-top">
+    <a class="navbar-brand js-scroll-trigger logo" href="#page-top">
+      <img src="/assets/img/svg/horizontal-icon.svg" alt=""/>
+    </a>
+    <button
+      (click)="expandNavBar()"
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive" *ngIf="(isMobile && navBarExpanded) || !isMobile">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#services" [class.active]="currentSection == 'services'">
+            {{"SERVICES" | translate}}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#technology" [class.active]="currentSection == 'technology'">
+            {{"TECHNOLOGY" | translate}}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" [class.active]="currentSection == 'contact'">
+            {{"CONTACT" | translate}}
+          </a>
+        </li>
+        <!-- <div class="language"></div> -->
+        <!--desktop language section-->
+        <li class="nav-item language-container" (mouseleave)="onLanguageHover(false)" *ngIf="!isMobile">
+          <div class="language-menu" (mouseenter)="onLanguageHover(true)">
+            <div class="language-current">
+              <span>{{currentLanguage()}}</span>&nbsp;
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="language-dropdown">
+              <div class="language-option" *ngIf="isHoveringLanguage">
+              <span *ngFor="let language of availableLanguages()" (click)="onChangeLanguage(language)">
+                {{language}}
+              </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!--mobile language section-->
+        <li class="nav-item" *ngIf="isMobile">
+          <div class="nav-link" (click)="onChangeNextLanguage()">
+            {{currentLanguage()}}
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

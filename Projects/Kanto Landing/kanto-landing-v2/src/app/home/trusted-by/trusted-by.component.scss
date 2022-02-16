@@ -1,0 +1,95 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+// Styling for the technology section
+
+#technology {
+  background-color: white !important;
+  padding: 100px 0 80px 0;
+}
+
+.overflow-elements{
+  overflow-x: hidden;
+}
+
+.technology-section {
+  overflow-x: hidden;
+}
+
+.section-subheading {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 57px;
+  margin-top: 42px;
+  padding: 0 30px;
+}
+
+.logos-row-container {
+  padding-top: 12px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100vw;
+  height: 195px;
+}
+
+.subheading {
+  padding: 40px 10px 40px 10px;
+  margin-top: 40px;
+  font-size: 1.6em;
+  font-weight: 800;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #6c757d!important;
+  font-style: italic;
+
+}
+
+.image-logo {
+  width: 100%;
+}
+
+.logos {
+  text-align: center;
+}
+
+#safeit{
+   transform: scale(0.5); 
+}
+#helikan{
+  transform: scale(1.2); 
+}
+@keyframes translating2 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translate(-2640px, 0);}
+}
+
+.logos-row {
+  // filter: grayscale(50%);
+  margin-top: 8vw;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.05), 0 0px 12px 0 rgba(0, 0, 0, 0.05);  
+  animation: translating2 14s linear infinite;
+  @media screen and (max-width: 993px) {
+    animation: translating2 15s linear infinite;
+  }
+  // &:hover{
+  //   filter: grayscale(0%);
+  // }
+  transform: translateX(-465px);
+  min-width: 5000px;
+}
+
+.logo { 
+  @media screen and (max-width: 768px) {
+    transform: scale(1.2);
+  }
+  padding: 26px;
+  margin-right: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  a {
+    width: 110px;
+  }
+}

@@ -1,0 +1,154 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+// Styling for the contact section
+section#contact {
+  padding: 80px 0 265px 0;
+  background-color:	#F6F6F6;
+  background-image: url("./../../../assets/img/svg/footer.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  
+  @media screen and (min-width: 1600px) {
+    padding: 80px 0 365px 0;
+  }
+
+  .section-heading {
+    color: $white;
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 20px;
+    }
+    input.form-control {
+      height: auto;
+      font-size: 1.2em;
+    }
+    textarea.form-control {
+      height: 266px;
+      font-size: 1.2em;
+    }
+  }
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  .form-error {
+    color: #D22D78;
+  }
+  ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  ::-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-ms-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  .email-sent {
+    color: black;
+    padding: 25px;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+.btn {
+  position: relative;
+  color: #30b9db;
+  border: 2px solid #30b9db;
+  margin-top: 45px;
+  width: 100%;
+  z-index: 1;
+  transition: 0.08s ease-in;
+  &:before {
+    content: "";
+    position: absolute;
+    background: #30b9db;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+  }
+  @media (min-width: 768px) {
+    width: initial;
+  }
+}
+
+.fill {
+  &:hover {
+    color: whitesmoke;
+    &:before {
+      top: 0;
+    }
+  }  
+}
+
+.section-heading {
+  position: relative;
+  color: black !important; 
+  &:after {
+    position: absolute;
+    bottom: -16px;
+    content: "";
+    height: 4px;
+    width: 100px;
+    left: calc(50% - 50px);
+    background: #2ae7fc;
+    border-radius: 2px;
+  }
+}
+
+.section-subheading {
+  margin: 52px 0 40px;
+}
+
+.contact-map {
+  margin-top: 65px;
+  width: 100%;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+  li {
+    a {
+      font-size: 27px;
+      line-height: 50px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      color: white;
+      border-radius: 100%;
+      outline: none;
+      background-color: $gray-900;
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.fa-linked-in {
+  margin-left: 13px;
+}

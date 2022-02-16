@@ -1,0 +1,66 @@
+<section id="contact">
+  <form (submit)="onSubmit()" [formGroup]="contactForm" name="sentMessage" novalidate="novalidate">
+    <div class="elements-container">
+      <div class="logo-container">
+        <img class="kanto-logo" src="assets/img/png/Logo_Horizontal_Negativo.png" alt="">
+      </div>
+      <div class="social-media-container">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/kantostudio/"  target="_blank">
+              <img class="social-media-icon" src="assets/img/png/WHITE_INSTAGRAM.png" alt="">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/kantostudiosoftware" target="_blank">
+              <img class="social-media-icon" src="assets/img/png/WHITE_768PX_FACEBOOK.png" alt="">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/company/kanto-studio" target="_blank">
+              <img #linkedin class="social-media-icon" src="assets/img/png/WHITE_1_LINKEDIN.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div *ngIf="!hasSendEmail" class="form-container">
+      <div class="form-group">
+        <h2 class="contact-header">{{ "CONTACT_US" | translate }}</h2>
+        <input formControlName="email" class="form-control" id="email" type="email"
+          placeholder="{{ 'EMAIL' | translate }}" />
+          <div class="form-error"
+          *ngIf="contactForm.controls['email'].status === 'INVALID' && contactForm.controls['email'].touched">
+          {{ "EMAIL_ERROR" | translate }}
+        </div>
+        <p class="help-block text-danger"></p>
+      </div>
+      <div class="form-group">
+        <select formControlName="service" class="form-control" id="service" type="service">
+          <option selected disabled value="null"> {{ 'WHICH_SERVICE' | translate }}</option>
+          <option value="WEB_DEVELOPMENT"> {{ 'WEB_DEVELOPMENT' | translate }}</option>
+          <option value="MOBILE_DEVELOPMENT"> {{ 'MOBILE_DEVELOPMENT' | translate }} </option>
+          <option value="DATA_SCIENCE">{{ 'DATA_SCIENCE' | translate }}</option>
+          <option value="PROCESS_AUTOMATION" >{{ 'PROCESS_AUTOMATION' | translate }}</option>
+          <option value="CLOUD_CONSULTING">{{ 'CLOUD_CONSULTING' | translate }}</option>
+          <option value="DESIGN" >{{ 'DESIGN' | translate }}</option>
+        </select>
+        <p class="help-block text-danger"></p>
+      </div>
+      <div class="form-group">
+        <textarea formControlName="description" class="form-control" placeholder="{{ 'CONTACT_DESCRIPTION' | translate}}"></textarea>
+        <div class="form-error"
+          *ngIf="contactForm.controls['description'].touched && contactForm.controls['description'].value === null">
+          {{"CONTACT_DESCRIPTION_ERROR" | translate}}
+        </div>
+      </div>
+      <div class="text-center">
+        <div id="success"></div>
+        <button id="sendMessageButton" class="btn" [ngClass]="{'fill': contactForm.status === 'VALID'}"
+          type="submit">{{ "SEND_MESSAGE" | translate }}</button>
+      </div>
+    </div>
+  </form>
+    <h2 *ngIf="hasSendEmail" class="email-sent" innerHTML="{{ 'EMAIL_SENT' | translate }}"></h2>
+</section>

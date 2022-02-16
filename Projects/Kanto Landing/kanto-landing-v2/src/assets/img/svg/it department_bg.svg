@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="756px" height="801px" viewBox="0 0 756 801" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="42.4740647%" x2="154.04676%" y2="44.7531019%" id="linearGradient-1">
+            <stop stop-color="#247EBF" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="-5.42060585%" cy="94.2406085%" fx="-5.42060585%" fy="94.2406085%" r="49.3815469%" gradientTransform="translate(-0.054206,0.942406),scale(1.000000,0.948544),rotate(-18.110302),translate(0.054206,-0.942406)" id="radialGradient-2">
+            <stop stop-color="#2AE7FC" offset="0%"></stop>
+            <stop stop-color="#1366A1" stop-opacity="0.0234941123" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="102.210216%" y1="57.248503%" x2="-3.08124676%" y2="58.6400155%" id="linearGradient-3">
+            <stop stop-color="#2380C0" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" stop-opacity="0.562811368" offset="54.6176846%"></stop>
+            <stop stop-color="#2380C0" stop-opacity="0.010473279" offset="100%"></stop>
+        </linearGradient>
+        <path d="M5.68434189e-13,69 C300.666667,-29.3025818 511,-21.2038727 631,93.2961273 C811,265.046127 788.797458,512.92792 641,692.005263 C542.468362,811.390159 328.801695,832.721738 5.68434189e-13,756 L5.68434189e-13,69 Z" id="path-4"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(0.000000, -3114.000000)">
+            <g id="Group-19" transform="translate(-3.000000, 3114.000000)">
+                <g id="Rectangle">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-4"></use>
+                    <use fill="url(#radialGradient-2)" xlink:href="#path-4"></use>
+                    <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1439px" height="254px" viewBox="0 0 1439 254" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>onda4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="10.3116443%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFF0FE" stop-opacity="0.356091486" offset="0%"></stop>
+            <stop stop-color="#26B1DB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+        <g id="Landing-Page" transform="translate(-1.000000, -1343.000000)" fill="url(#linearGradient-1)">
+            <path d="M1.04597746,1351.00134 C390.508239,1461.13401 523.203265,1429.03022 661.416496,1394.38605 C799.629728,1359.74187 904.569489,1296.48948 1151.79124,1400.5471 C1253.81793,1443.49095 1355.99716,1370.32628 1440,1351.00134 L1440,1567 C1336.41838,1576.42801 1175.89539,1615.44829 1094.34535,1567 C924.876896,1466.32001 839.547755,1390.08581 396.744724,1540.44123 C178.182279,1614.65493 79.6430462,1605.3143 1.04597746,1567 L1.04597746,1351.00134 Z" id="onda4"></path>
+        </g>
+    </g>
+</svg>

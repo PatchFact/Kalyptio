@@ -1,0 +1,23 @@
+<svg width="1440" height="304" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+ <title>onda3</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <linearGradient id="linearGradient-1" y2="152.341869%" x2="42.5512614%" y1="10.6680477%" x1="42.5512614%">
+   <stop offset="0%" stop-color="#247EBF"/>
+   <stop offset="100%" stop-color="#2AE7FC"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(179.9847412109375 604.4999999999999,141.00000000000003) " opacity="0.49073" fill-opacity="0.5" fill-rule="evenodd" fill="none" id="Design">
+   <g fill="url(#linearGradient-1)" id="Landing-Page">
+    <path transform="rotate(-180 604.5,141.00000000000003) translate(-604.5,-1565) " id="onda3" d="m198.575,1574.54174c0,0 9.89442,-91.32505 421.85811,18.80762c411.96369,110.13267 502.57318,61.68086 648.77177,27.03669c146.19859,-34.64418 257.20132,-97.89657 518.70646,6.16105c261.50514,104.05762 519.58866,-66.58312 519.58866,-66.58312l0,273.52092c0,0 -359.39166,93.51109 -538.65126,-7.1689c-179.2596,-100.67999 -311.22095,-210.23019 -779.60721,-59.87477c-468.38626,150.35542 -415.66313,-101.93487 -722.17083,-61.12965c-306.50769,40.80522 -68.4957,-130.76984 -68.4957,-130.76984z"/>
+   </g>
+  </g>
+ </g>
+</svg>

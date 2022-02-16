@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="235px" viewBox="0 0 1440 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="26.2994396%" y1="140.367839%" x2="100%" y2="15.059499%" id="linearGradient-1">
+            <stop stop-color="#247EBF" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(0.000000, -6502.000000)">
+            <g id="Group-16" transform="translate(0.000000, 6502.000000)">
+                <path d="M3.41060513e-13,35.9369272 C3.41060513e-13,35.9369272 445.134098,100.136883 743.140413,43.1173609 C1207.90861,-45.8098167 1440,48.2346632 1440,49.0789963 C1440,51.1588023 1440,234.595591 1440,234.595591 L3.41060513e-13,234.595591 L3.41060513e-13,35.9369272 Z" id="path-2" fill="url(#linearGradient-1)"></path>
+                <g id="Group-20" transform="translate(97.000000, 0.000000)">
+                    <circle id="Oval" fill="#FFFFFF" cx="170.5" cy="43.5" r="2.5"></circle>
+                    <circle id="Oval-Copy-74" fill="#FFFFFF" cx="3.5" cy="53.5" r="3.5"></circle>
+                    <circle id="Oval-Copy-34" fill="#FFFFFF" cx="131.5" cy="57.5" r="2.5"></circle>
+                    <circle id="Oval-Copy-75" fill="#2AE7FC" cx="57.5" cy="109.5" r="2.5"></circle>
+                    <circle id="Oval-Copy-75" fill="#2AE7FC" cx="10" cy="132" r="5"></circle>
+                    <circle id="Oval-Copy-73" fill="#2AE7FC" cx="87.5" cy="17.5" r="2.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(1125.092248, 77.092248) rotate(74.000000) translate(-1125.092248, -77.092248) " cx="1125.09225" cy="77.0922476" r="2.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" transform="translate(1265.092248, 137.092248) rotate(74.000000) translate(-1265.092248, -137.092248) " cx="1265.09225" cy="137.092248" r="2.5"></circle>
+                    <circle id="Oval-Copy-34" fill="#FFFFFF" transform="translate(1078.092248, 8.092248) rotate(74.000000) translate(-1078.092248, -8.092248) " cx="1078.09225" cy="8.09224763" r="2.5"></circle>
+                    <circle id="Oval-Copy-73" fill="#2AE7FC" cx="1065.5" cy="55.5" r="2.5"></circle>
+                    <circle id="Oval-Copy-76" fill="#2AE7FC" cx="619.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval-Copy-73" fill="#2AE7FC" cx="1159.5" cy="20.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

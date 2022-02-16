@@ -1,0 +1,433 @@
+// @import "../../scss/variables.scss";
+
+@keyframes floating {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateY(0px);}
+  50% { transform: translateY(10px);}
+  100% {transform: translateY(0px)}
+}
+.floating1{
+  animation: floating 3s infinite;
+}
+.floating2{
+  animation: floating 4s infinite;
+}
+.grow {
+   transition: all .3s ease-in-out; 
+}
+  
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
+.projects-container{
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 150px 430px;
+  width: 100%;
+  @media screen and (max-width: 1800px) {
+    padding: 120px 380px;
+  }
+  @media screen and (max-width: 1600px) {
+    padding: 100px 270px;
+  }
+  @media screen and (max-width: 1350px) {
+    padding: 80px 135px;
+  }
+  @media screen and (max-width: 1080px) {
+    padding: 80px 62px;
+  }
+  @media screen and (max-width: 993px) {
+    padding: 20px 40px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10px 10px;
+  }
+}
+.project{
+  text-align: center;
+  margin: 10px;
+}
+.project-image{
+  width: 250px;
+ 
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.05), 0 0px 12px 0 rgba(0, 0, 0, 0.05);
+  width: 250px;
+  height: 240px;
+  justify-content: space-around;
+
+  &-heading{
+    padding: 0 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    color: #3D3BEE;
+  }
+  &-text{
+    padding: 0 16px 0 16px;
+    text-align: center;
+    font-size: .8em;
+    color: #808080;
+  }
+  &-button{
+    display: flex;
+    font-size: .8em;
+    color: #2ae7fc;
+    width: 75px;
+    align-self: flex-end;
+  }
+}
+
+.more-button{
+  align-self: flex-end;
+  padding-right: 16px;
+}
+.projects-section-container{
+    margin: 100px 0;
+}
+
+.testimonials-section{
+    background-color:rgb(240,240,244) ;
+}
+
+.something{
+  height: 50px;
+}
+
+.top-mark{
+  font-size: 70px;
+  height: 15vw;
+  position: relative;
+  text-align: left;
+  color: #9394f9;
+  @media screen and (min-width: 993px) {
+    font-size: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 90px;
+    height: 6vw;
+  }
+  @media screen and (min-width: 500px) {
+    font-size: 80px;
+    height: 10vw;
+  }
+}
+.buttom-mark{
+  position: relative;
+  text-align: right;
+  font-size: 70px;
+  color: #9394f9;
+  @media screen and (min-width: 993px) {
+    font-size: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 90px;
+  }
+  @media screen and (min-width: 500px) {
+    font-size: 80px;
+  }
+}
+
+
+.slider {
+  height: 65vw;
+  position: relative;
+  width: auto;
+  margin: -50px 15px;
+  overflow: visible;
+  @media screen and (min-width: 993px) {
+    height: 28vw;
+  }
+  @media screen and (min-width: 768px) {
+    height: 35vw !important;
+  }
+  @media screen and (min-width: 500px) {
+    height: 38vw !important;
+  }
+  @media screen and (min-width: 400px) {
+    height: 50vw;
+  }
+}
+
+.mask {
+  overflow: hidden;
+  height: 70vw;
+  @media screen and (min-width: 993px) {
+    height: 28vw;
+  }
+  @media screen and (min-width: 768px) {
+    height: 35vw !important;
+  }
+  @media screen and (min-width: 500px) {
+    height: 38vw !important;
+  }
+  @media screen and (min-width: 400px) {
+    height: 50vw;
+  }
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider li {
+  width: auto;
+  height: 340px;
+  position: absolute;
+  top: -600px;
+  list-style: none;
+}
+
+.slider .quote {
+  font-size: .5em;
+  padding: 0 5vw;
+  @media screen and (min-width: 500px) {
+    font-size: .8em;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 2vw;
+  }
+}
+
+.slider .source {
+  padding: 0 5vw;
+  font-size: .8em;
+  text-align: right;
+  @media screen and (min-width: 500px) {
+    font-size: 1em;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 2.5vw;
+  }
+}
+
+.naija{
+  padding: 28px;
+  height: 250px;
+}
+
+.kzn{
+  margin: 18px;
+  width: 170px;
+}
+
+.slider li.anim1 {
+  animation: cycle 35s linear infinite;
+}
+
+.slider li.anim2 {
+  animation: cycle2 35s linear infinite;
+}
+
+.slider li.anim3 {
+  animation: cycle3 35s linear infinite;
+}
+
+.slider li.anim4 {
+  animation: cycle4 35s linear infinite;
+}
+
+.slider li.anim5 {
+  animation: cycle5 35s linear infinite;
+}
+
+.slider:hover li {
+  animation-play-state: paused;
+}
+
+@keyframes cycle {
+  0% {
+    top: 0px;
+  }
+  4% {
+    top: 0px;
+  }
+  16% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  20% {
+    top: 1000px;
+    opacity: 0;
+    z-index: 0;
+  }
+  21% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+  50% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+  92% {
+    top: -1000px;
+    opacity: 0;
+    z-index: 0;
+  }
+  96% {
+    top: -1000px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes cycle2 {
+  0% {
+    top: -1000px;
+    opacity: 0;
+  }
+  16% {
+    top: -1000px;
+    opacity: 0;
+  }
+  20% {
+    top: 0px;
+    opacity: 1;
+  }
+  24% {
+    top: 0px;
+    opacity: 1;
+  }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  40% {
+    top: 1000px;
+    opacity: 0;
+    z-index: 0;
+  }
+  41% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle3 {
+  0% {
+    top: -1000px;
+    opacity: 0;
+  }
+  36% {
+    top: -1000px;
+    opacity: 0;
+  }
+  40% {
+    top: 0px;
+    opacity: 1;
+  }
+  44% {
+    top: 0px;
+    opacity: 1;
+  }
+  56% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  60% {
+    top: 1000px;
+    opacity: 0;
+    z-index: 0;
+  }
+  61% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle4 {
+  0% {
+    top: -1000px;
+    opacity: 0;
+  }
+  56% {
+    top: -1000px;
+    opacity: 0;
+  }
+  60% {
+    top: 0px;
+    opacity: 1;
+  }
+  64% {
+    top: 0px;
+    opacity: 1;
+  }
+  76% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  80% {
+    top: 1000px;
+    opacity: 0;
+    z-index: 0;
+  }
+  81% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+  100% {
+    top: -1000px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes cycle5 {
+  0% {
+    top: -1000px;
+    opacity: 0;
+  }
+  76% {
+    top: -1000px;
+    opacity: 0;
+  }
+  80% {
+    top: 0px;
+    opacity: 1;
+  }
+  84% {
+    top: 0px;
+    opacity: 1;
+  }
+  96% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    top: 1000px;
+    opacity: 0;
+    z-index: 0;
+  }
+}

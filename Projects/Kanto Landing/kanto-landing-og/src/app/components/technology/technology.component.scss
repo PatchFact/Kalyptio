@@ -1,0 +1,122 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+// Styling for the technology section
+
+#technology {
+  background-color: white !important;
+  padding: 100px 0 80px 0;
+}
+
+.overflow-elements{
+  overflow-x: hidden;
+}
+
+.section-heading {
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom: -16px;
+    content: "";
+    height: 4px;
+    width: 100px;
+    left: calc(50% - 50px);
+    background: #2ae7fc;
+  }
+}
+
+.technology-section {
+  overflow-x: hidden;
+}
+
+.section-subheading {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 57px;
+  margin-top: 42px;
+  padding: 0 30px;
+}
+
+@keyframes translating {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translate(-2640px, 0);}
+}
+
+.logos-row-container {
+  padding-top: 12px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100vw;
+  height: 195px;
+}
+
+.subheading {
+  padding: 40px 10px 40px 10px;
+  margin-top: 40px;
+  font-size: 1.6em;
+  font-weight: 400;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #6c757d!important;
+  font-style: italic;
+}
+
+.image-logo {
+  width: 100%;
+}
+
+.logos {
+  text-align: center;
+}
+
+#angular {
+  transform: scale(0.85);
+}
+
+#html {
+  transform: scale(0.75);
+}
+
+#python {
+  transform: scale(0.65);
+}
+
+@keyframes translating2 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translate(-2640px, 0);}
+}
+
+.logos-row {
+  /* position: absolute; */
+  padding: 30px;
+
+  animation: translating2 20s linear infinite;
+  @media screen and (max-width: 993px) {
+    animation: translating2 15s linear infinite;
+  }
+  transform: translateX(-40px);
+  min-width: 3000px;
+}
+
+.logo {
+  /* width: 165px;
+  height: 150px; */
+  box-shadow: 2px 2px 10px 1px rgba(194,194,194,0.85);
+  /* border-radius: 25px; */
+  padding: 26px;
+  margin-right: 55px;
+  /* margin-bottom: 16px; */
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  a {
+    width: 110px;
+  }
+}

@@ -1,0 +1,199 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+
+ * {
+   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+ }
+// Styling for the navbar
+.mainNav {
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.3));
+  box-shadow: none;
+  height: 64px;
+  .nav-menu-top {
+    margin: -7px 0 0 0;
+    top: 0;
+    position: absolute;
+    padding-right: 16px !important;
+  }
+  .logo {
+    img {
+      height: auto;
+      width: 150px !important;
+    }
+  }
+  .navbar-toggler {
+    font-size: 1.6em;
+    color: $primary;
+    border: none;
+  }
+  .navbar-nav {
+     margin: 0 0 11px 0;
+    .nav-item {
+      .nav-link {
+        font-weight: 500;
+        color: $primary;
+        @include heading-font;
+        &.active {
+          position: relative;
+          //text-shadow: 0px 0px 4px rgba(48, 185, 219, 1);
+          &:after {
+            margin: 0 0 -5px 0;
+            position: absolute;
+            //box-shadow: 0px -3px 11px 0.5px #0076b6;
+            bottom: 0;
+            content: "";
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: $gradient-end;
+          }
+        }
+      }
+      .nav-link:hover {
+        color: darken($primary, 10%);
+      }
+    }
+  }
+  select.form-control {
+    color: white;
+  }
+  &.gray-background {
+    position: fixed;
+    background: white;//$gray-900 none;
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    .nav-link {
+      &.active {
+        //text-shadow: 0px 0px 4px $gray-900 !important;
+        &:after {
+          display: initial !important;
+        }
+      }
+    }
+  }
+}
+
+.navbar-expanded {
+  height: 255px;
+  overflow: hidden;
+}
+
+#navbarResponsive {
+  height: 64px;
+  & > ul.navbar-nav {
+    height: 100%;
+  }
+}
+
+.language-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  color: $primary;
+}
+
+// mobile
+@media(max-width: 768px) {
+  .navbar {
+    padding: 0 1rem !important;
+  }
+  .nav-link {
+    &.active {
+      width: 150px;
+    }
+  }
+}
+
+// desktop
+@media (min-width: 768px) {
+  #navbarResponsive {
+    height: 64px;
+    & > ul.navbar-nav {
+      height: 100%;
+    }
+  }
+  .mainNav {
+    height: 64px;
+    border: none;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.3));
+    box-shadow: none;
+    display: flex;
+    justify-content: space-around;
+    .logo {
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          height: 100%;
+          padding: 1.1em 1em !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &.active {
+            text-shadow: none;
+            &:after {
+              display: none;
+            }
+          }
+          a {
+            display: block;
+          }
+        }
+        // .language-menu {
+        //   position: relative;
+        //   font-weight: 500;
+        //   color: $primary;
+        //   cursor: pointer;
+        //   .language-dropdown {
+        //     position: absolute;
+        //     padding: 1em 1em !important;
+        //   }
+        // }
+        // .language-current:nth-child(1) {
+        //   padding: .3em 1em !important;
+        // }
+        // .language-current {
+        //   padding: .3em 1em;
+        //   @include heading-font;
+        //   &.active,
+        //   &:hover {
+        //     color: $primary;
+        //   }
+        // }
+        .language-current:hover {
+          color: darken($primary, 10%);
+        }
+        .contact-button {
+          color: white;
+          padding: 0.5em 0.5em !important;
+          margin: 0.5em;
+          text-transform: uppercase;
+        }
+        .contact-button:hover {
+          color: white;
+        }
+      }
+      .language {
+        border-left: 2px $primary solid;
+        border-radius: 1px;
+        margin: 30px 10px;
+      }
+      .language-container {
+        //position: relative;
+        width: 80px;
+      }
+    }
+    &.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $gray-900;
+    }
+
+  }
+}

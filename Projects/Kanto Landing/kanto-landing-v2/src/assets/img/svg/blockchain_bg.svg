@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="763px" height="802px" viewBox="0 0 763 802" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>blockchain_bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="42.4740647%" x2="154.04676%" y2="44.7531019%" id="linearGradient-1">
+            <stop stop-color="#247EBF" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="-5.42060585%" cy="94.2406085%" fx="-5.42060585%" fy="94.2406085%" r="49.3488362%" gradientTransform="translate(-0.054206,0.942406),scale(1.000000,0.955112),rotate(-17.993816),translate(0.054206,-0.942406)" id="radialGradient-2">
+            <stop stop-color="#2AE7FC" offset="0%"></stop>
+            <stop stop-color="#1366A1" stop-opacity="0.0234941123" offset="100%"></stop>
+        </radialGradient>
+        <path d="M0,76.9413361 C248.269601,-25.647112 437.182711,-25.647112 566.739328,76.9413361 C679.259025,166.039225 765.632782,287.193484 765.998229,405.391557 C766.296714,501.931949 728.862404,608.052743 662.44736,688.567164 C563.96102,807.961358 343.145234,833.103918 0,763.994843 L0,76.9413361 Z" id="path-3"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(0.000000, -4758.000000)">
+            <g id="blockchain_bg" transform="translate(-3.000000, 4758.000000)">
+                <g id="Rectangle">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                    <use fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

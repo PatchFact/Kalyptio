@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="791px" viewBox="0 0 1440 791" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>path-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="1.17864325%" y1="3.64462627%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#247EBF" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(0.000000, -722.000000)" fill="url(#linearGradient-1)">
+            <g id="bg" transform="translate(0.000000, 722.000000)">
+                <g id="path-2-link">
+                    <g>
+                        <path d="M0,9 C0,9 278.804581,154.165573 743.140413,45 C1225.90714,-68.4986853 1440,70.656234 1440,74.889403 C1440,85.31677 1440,705 1440,705 C1123.15592,761.717093 883.155916,790.075639 720,790.075639 C563.155916,790.075639 323.155916,761.717093 0,705 L0,9 Z" id="path-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

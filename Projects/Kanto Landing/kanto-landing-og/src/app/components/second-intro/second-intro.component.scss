@@ -1,0 +1,166 @@
+@import "../../../scss/variables.scss";
+// Styling for the services section
+#second-intro {
+  overflow: hidden;
+  background-size: cover;
+  background-image: url("/assets/img/svg/iphone8.svg");
+  // margin-top: -300px;
+  margin-bottom: -10px;
+
+  @media screen and (min-width: 993px) {
+    background-image: url("/assets/img/svg/first_background.svg");
+    margin-bottom: 0;
+    
+  }
+  @media screen and (min-width: 1600px) {
+    padding-bottom: 183px;
+    margin-top: -30px;
+    margin-bottom: 100px;
+    background-image: url("/assets/img/svg/first_background.svg");
+  }
+}
+
+@keyframes waving1 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateX(-1440px);}
+}
+@keyframes waving2 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateX(-1440px);}
+}
+@keyframes waving3 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateX(-4320px);}
+  100% {transform: translateX(-1440px)}
+}
+@keyframes waving4 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateX(-1440px);}
+}
+@keyframes waving5 {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateX(-4320px);}
+  100% {transform: translateX(-1440px)}
+}
+
+.waves-container{
+  margin-bottom: -150px;
+  position: relative;
+  width: 100%;
+  height: 330px;
+  @media screen and (min-width: 993px) {
+    margin-bottom: -115px;
+    padding-top: 0;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-bottom: -206px;
+    padding-top: 0;
+  }
+}
+
+.wave1{
+  position: absolute;
+  transform: translateX(-4320px); 
+  display: flex;
+  animation: waving1 24s linear infinite;
+}
+.wave2{
+  position: absolute;
+  transform: translateX(-4320px); 
+  display: flex;
+  animation: waving2 17s linear infinite;
+}
+.wave3{
+  position: absolute;
+  transform: translateX(4320px); 
+  display: flex;
+  animation: waving3 20s linear infinite;
+}
+.wave4{
+  position: absolute;
+  transform: translateX(-4320px); 
+  display: flex;
+  animation: waving4 14s linear infinite;
+}
+
+.wave5{
+  position: absolute;
+  transform: translateX(4320px); 
+  display: flex;
+  animation: waving5 10s linear infinite;
+}
+
+.reverse{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.section-heading-below{
+  font-size: 40px;
+  font-weight: 700px;
+}
+
+.my-section-heading {
+  font-size: 40px;
+  font-weight: 100 !important;
+  position: relative;
+  color: white;
+  margin-bottom: 45px;
+  @media screen and (min-width: 993px) {
+  }
+  @media screen and (min-width: 1600px) {
+     padding: -300px 0 0 0;
+  }
+  &:after {
+    position: absolute;
+    bottom: -16px;
+    content: "";
+    height: 4px;
+    width: 100px;
+    left: calc(50% - 50px);
+    background: $gradient-end;
+  }
+}
+
+.text-muted {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.container {
+  padding-bottom: 160px;
+  margin-top: 25vw;
+  @media screen and (min-width: 993px) {
+    margin-top: 10vw;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-top: 10vw;
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+  font-weight: 500;
+  color: white;
+
+}
+
+.services-row {
+  color: white;
+  img {
+    width: 100px;
+    @media screen and (min-width: 994px) {
+      width: 115px;
+    }
+  }
+}
+
+.service-logo {
+  padding: 15px;
+}

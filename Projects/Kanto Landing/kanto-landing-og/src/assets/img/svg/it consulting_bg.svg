@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="816px" height="750px" viewBox="0 0 816 750" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>it consulting_bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="42.4740647%" x2="154.04676%" y2="44.7531019%" id="linearGradient-1">
+            <stop stop-color="#247EBF" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="-5.42060585%" cy="94.2406085%" fx="-5.42060585%" fy="94.2406085%" r="53.1094514%" gradientTransform="translate(-0.054206,0.942406),scale(0.918954,1.000000),rotate(-15.911717),translate(0.054206,-0.942406)" id="radialGradient-2">
+            <stop stop-color="#2AE7FC" offset="0%"></stop>
+            <stop stop-color="#1366A1" stop-opacity="0.0234941123" offset="100%"></stop>
+        </radialGradient>
+        <path d="M157.75142,86.492389 C287.033487,-15.9246987 506.449681,-26.5057962 816,54.7490964 L816,699.535895 C405.940466,774.80439 161.262084,765.87423 81.9648534,672.745414 C-36.9809919,533.05219 -36.1716809,240.11802 157.75142,86.492389 Z" id="path-3"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-624.000000, -3999.000000)">
+            <g id="it-consulting_bg" transform="translate(624.000000, 3999.000000)">
+                <g id="Rectangle-Copy">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                    <use fill="url(#radialGradient-2)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "timeline.scss";
+@import "team.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y none;
+}
+
+section {
+  scroll-snap-align: start;
+}
+.form-control {
+  width: 30vw;
+}
+
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}

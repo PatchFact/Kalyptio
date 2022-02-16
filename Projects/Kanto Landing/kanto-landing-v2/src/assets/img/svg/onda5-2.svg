@@ -1,0 +1,18 @@
+<svg width="1440" height="330" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+
+ <title>onda5</title>
+ <desc>Created with Sketch.</desc>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(-179.69137573242188 604,167.00000000000003) " opacity="0.5" fill-opacity="0.471241" fill-rule="evenodd" fill="none" id="Design">
+   <g stroke="null" fill="#2AE7FC" id="Landing-Page">
+    <path stroke="null" id="onda5" d="m1468.63314,35.54174c0,0 -8.46678,-91.32505 -360.98919,18.80762c-352.52241,110.13267 -430.05808,61.68086 -555.16201,27.03669c-125.10394,-34.64418 -220.09034,-97.89657 -443.86351,6.16105c-223.77318,104.05762 -444.61843,-66.58312 -444.61843,-66.58312l0,273.52092c0,0 307.53588,93.51109 460.93053,-7.1689c153.39465,-100.67999 266.3156,-210.23019 667.1195,-59.87477c400.8039,150.35542 355.68807,-101.93487 617.97049,-61.12965c262.28241,40.80522 58.61262,-130.76984 58.61262,-130.76984z"/>
+   </g>
+  </g>
+ </g>
+</svg>

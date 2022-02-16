@@ -1,0 +1,194 @@
+@import "../../../scss/variables.scss";
+@import "../../../scss/mixins.scss";
+
+// Styling for the contact section
+section#contact {
+  @media (min-width: 768px) {
+    padding: 100px 50px;
+  }
+  padding: 50px 0px;
+  background-image: url("./../../../assets/img/png/3_KS_FOOTER.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+
+  .section-heading {
+    color: $white;
+  }
+  .form-group {
+    align-self: center;
+    input,
+    textarea {
+      //padding: 20px;
+    }
+    input.form-control {
+      color: $secondary;
+      height: 35px;
+    }
+    textarea.form-control {
+      color: $secondary;
+      height: 200px;
+      font-size: 1.2em;
+    }
+  }
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  .form-error {
+    color: #D22D78;
+  }
+  ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  ::-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-ms-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  .email-sent {
+    color: white;
+    padding: 25px;
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+.btn {
+  position: relative;
+    color: white;
+    border: 2px solid #3D3BEE;
+    background-color: #3D3BEE;
+    border-radius: 70px;
+    padding: 5px 50px;
+  &:before {
+    content: "";
+    position: absolute;
+    background: $primary;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+  }
+  @media (min-width: 768px) {
+    padding: 2px 40px;
+    width: initial;
+  }
+}
+
+.fill {
+  &:hover {
+    color: whitesmoke;
+    &:before {
+      top: 0;
+    }
+  }  
+}
+
+.section-heading {
+  position: relative;
+  color: black !important; 
+  &:after {
+    position: absolute;
+    bottom: -16px;
+    content: "";
+    height: 4px;
+    width: 100px;
+    left: calc(50% - 50px);
+    background: #2ae7fc;
+    border-radius: 2px;
+  }
+}
+
+.section-subheading {
+  margin: 52px 0 40px;
+}
+
+.contact-map {
+  margin-top: 65px;
+  width: 100%;
+}
+
+.kanto-logo{
+  width: 100px;
+  @media (min-width: 500px) {
+    width: 150px;
+  }
+  @media (min-width: 768px) {
+    width: 220px;
+  }
+}
+
+.social-media-icon {
+  width: 30px;
+  z-index: 1;
+  margin-right: 0;
+  @media (min-width: 500px) {
+    margin-right: 10px;
+  }
+  @media (min-width: 993px) {
+    width: 40px;
+  }
+}
+
+.form-control {
+  border-radius: 56px !important;
+  height: auto !important;
+  @media (max-width: 500px) {
+    width: 60vw !important;
+  }
+}
+
+.elements-container{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.logo-container{
+  margin-right: 32vw;
+  @media (min-width: 993px) {
+    margin-right: 44vw;
+  }
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  @media (min-width: 500px) {
+    margin-top: 15px;
+  }
+}
+
+.social-media-container{
+  align-self: center;
+  width: 110px;
+  @media (min-width: 500px) {
+    width: 150px;
+  }
+  @media (min-width: 993px) {
+    width: 220px;
+  }
+}
+
+.contact-header {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}

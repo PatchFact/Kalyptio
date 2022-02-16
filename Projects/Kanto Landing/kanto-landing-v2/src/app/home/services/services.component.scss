@@ -1,0 +1,90 @@
+@import "../../../scss/variables.scss";
+
+@keyframes floating {
+  //If other logo is added a sum of the width in the pixels is needed to simulate infinite loop
+  0%  { transform: translateY(0px);}
+  50% { transform: translateY(10px);}
+  100% {transform: translateY(0px)}
+}
+.floating1{
+  animation: floating 3s infinite;
+}
+.floating2{
+  animation: floating 4s infinite;
+}
+.grow {
+   transition: all .3s ease-in-out; 
+}
+  
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
+.services-container{
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 150px 430px;
+  width: 100%;
+  @media screen and (max-width: 1800px) {
+    padding: 150px 380px;
+  }
+  @media screen and (max-width: 1600px) {
+    padding: 100px 270px;
+  }
+  @media screen and (max-width: 1350px) {
+    padding: 80px 135px;
+  }
+  @media screen and (max-width: 1080px) {
+    padding: 80px 62px;
+  }
+  @media screen and (max-width: 993px) {
+    padding: 20px 40px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10px 10px;
+  }
+}
+.service{
+  margin: 25px;
+}
+.service-image{
+  width: 220px;
+ 
+}
+.service-card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.05), 0 0px 12px 0 rgba(0, 0, 0, 0.05);
+  width: 220px;
+  height: 240px;
+  justify-content: space-around;
+
+  &-heading{
+    padding: 0 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    color: $primary;
+  }
+  &-text{
+    padding: 0 16px 0 16px;
+    text-align: center;
+    font-size: .8em;
+    color: $gray-900;
+  }
+  &-button{
+    display: flex;
+    font-size: .8em;
+    color: #2ae7fc;
+    width: 75px;
+    align-self: flex-end;
+  }
+}
+
+.more-button{
+  align-self: flex-end;
+  padding-right: 16px;
+}

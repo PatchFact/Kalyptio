@@ -1,0 +1,8 @@
+
+<!-- Navigation -->
+<app-nav-bar [languageConfig]="languageConfig$ | async" (languageChanged)="onLanguageChanged($event)"></app-nav-bar>
+
+<router-outlet></router-outlet>
+
+<!-- Contact -->
+<app-contact></app-contact>

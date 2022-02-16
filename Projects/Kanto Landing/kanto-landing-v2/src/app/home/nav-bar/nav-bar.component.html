@@ -1,0 +1,78 @@
+
+<nav class="navbar navbar-expand-lg fixed-top mainNav"
+     [class.gray-background]="navBarExpanded || (beyondOffset$ | async)"
+     [class.navbar-expanded]="navBarExpanded">
+<img class="logo-image" src="/assets/img/png/Logo_Horizontal_Negativo.png" alt="">
+<img class="background-image" src="/assets/img/png/LP_KS_HEADER_G_1.png" alt="">
+
+    <!-- <a class="navbar-brand js-scroll-trigger logo" href="#page-top">
+      <img src="/assets/img/svg/horizontal-icon.svg" alt=""/>
+    </a> -->
+    <button
+      (click)="expandNavBar()"
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive" *ngIf="(isMobile && navBarExpanded) || !isMobile">
+      <ul class="navbar-nav text-uppercase ">
+        <li class=" nav-item"
+        data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation" 
+          (click)="expandNavBar2()">
+          <a class="cool-link" 
+          href="/"
+          [class.active]="currentSection == 'home'">
+            {{"SERVICES_COMPLEMENT" | translate}}
+          </a>
+        </li>
+        <li class=" nav-item"
+        data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation" 
+          (click)="expandNavBar2()">
+          <a class="cool-link" href="/projects" 
+          [class.active]="currentSection == 'services'">
+            {{"PROJECTS" | translate}}
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="cool-link" href="/" [class.active]="currentSection == 'contact'">
+            {{"CONTACT" | translate}}
+          </a>
+        </li> -->
+        <!--desktop language section-->
+        <li class="nav-item language-container cool-link-language" (mouseleave)="onLanguageHover(false)" *ngIf="!isMobile">
+          <div [className]="isHoveringLanguage ? 'language-menu' : 'other-class'" (mouseenter)="onLanguageHover(true)">
+            <div class="language-current">
+              <span>{{currentLanguage()}}</span>&nbsp;
+              <!-- <i class="fas fa-angle-down"></i> -->
+            </div>
+            <div>
+              <div *ngIf="isHoveringLanguage">
+              <span *ngFor="let language of availableLanguages()" (click)="onChangeLanguage(language)">
+                {{language}}
+              </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!--mobile language section-->
+        <li class="nav-item cool-link-language" *ngIf="isMobile">
+          <div class="nav-link" (click)="onChangeNextLanguage()">
+            {{currentLanguage()}}
+          </div>
+        </li>
+      </ul>
+    </div>
+</nav>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="755px" height="779px" viewBox="0 0 755 779" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>bussines_bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="42.4740647%" x2="154.04676%" y2="44.7531019%" id="linearGradient-1">
+            <stop stop-color="#247EBF" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="-5.42060585%" cy="94.2406085%" fx="-5.42060585%" fy="94.2406085%" r="49.2808767%" gradientTransform="translate(-0.054206,0.942406),scale(1.000000,0.969191),rotate(-17.748940),translate(0.054206,-0.942406)" id="radialGradient-2">
+            <stop stop-color="#2AE7FC" offset="0%"></stop>
+            <stop stop-color="#1366A1" stop-opacity="0.0234941123" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="126.208968%" y1="50%" x2="40.4005349%" y2="112.634648%" id="linearGradient-3">
+            <stop stop-color="#2380C0" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#2AE7FC" stop-opacity="0.274994339" offset="54.6176846%"></stop>
+            <stop stop-color="#2380C0" stop-opacity="0.010473279" offset="100%"></stop>
+        </linearGradient>
+        <path d="M105.297145,101.522707 C219.726172,-7.61944256 436.293791,-28.7615094 755,38.0965063 L755,725.222247 C392.051643,805.433133 175.484025,795.916587 105.297145,696.672609 C0.0168243035,547.806643 -66.3463972,265.235931 105.297145,101.522707 Z" id="path-4"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page" transform="translate(-685.000000, -2462.000000)">
+            <g id="bussines_bg" transform="translate(685.000000, 2462.000000)">
+                <g id="Rectangle">
+                    <use fill="url(#linearGradient-1)" xlink:href="#path-4"></use>
+                    <use fill="url(#radialGradient-2)" xlink:href="#path-4"></use>
+                    <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
